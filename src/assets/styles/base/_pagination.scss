@@ -52,8 +52,8 @@
   }
 }
 
-.pagination { @include paginationStyle($primary-bg, $primary-color); }
-.pagination-primary { @include paginationStyle($primary-bg, $primary-color); }
+.pagination { @include paginationStyle($primary-color, $primary-color); }
+.pagination-primary { @include paginationStyle($primary-color, $primary-color); }
 .pagination-success { @include paginationStyle($success-bg, $success-color); }
 .pagination-info { @include paginationStyle($info-bg, $info-color); }
 .pagination-warning { @include paginationStyle($warning-bg, $warning-color); }

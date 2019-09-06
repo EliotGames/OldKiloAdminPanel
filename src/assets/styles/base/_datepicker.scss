@@ -19,8 +19,8 @@
     padding: 2px;
 
     .DateInput__display-text--focused {
-      background: lighten($primary-bg, 0);
-      border-color: $primary-bg;
+      background: lighten($primary-color, 0);
+      border-color: $primary-color;
       height: 100%;
       border-radius: 0;
       color: white;
@@ -33,36 +33,36 @@
 .DateRangePicker__picker,
 .SingleDatePicker__picker {
   .CalendarDay--selected-start, .CalendarDay--selected-end, .CalendarDay--selected {
-    background: $primary-bg;
-    border: 1px double $primary-bg;
+    background: $primary-color;
+    border: 1px double $primary-color;
   }
 
   .DayPickerKeyboardShortcuts__show--bottom-right {
-    border-right: 33px solid $primary-bg;
+    border-right: 33px solid $primary-color;
   }
 }
 
 .DateRangePicker__picker {
   .CalendarDay--selected-span {
-    background: lighten($primary-bg, 10);
-    border: 1px double darken($primary-bg, 3);
+    background: lighten($primary-color, 10);
+    border: 1px double darken($primary-color, 3);
   }
 
   .CalendarDay--selected-span.CalendarDay--hovered, .CalendarDay--selected-span:active {
-    background: $primary-bg;
-    border: 1px double darken($primary-bg, 3);
+    background: $primary-color;
+    border: 1px double darken($primary-color, 3);
   }
 
   .CalendarDay--hovered-span, .CalendarDay--after-hovered-start {
-    background: lighten($primary-bg, 10);
-    border: 1px double darken($primary-bg, 3);
+    background: lighten($primary-color, 10);
+    border: 1px double darken($primary-color, 3);
     color: white;
   }
 
   .CalendarDay--selected-start,
   .CalendarDay--selected-end {
-    background: $primary-bg;
-    border: 1px double darken($primary-bg, 3);
+    background: $primary-color;
+    border: 1px double darken($primary-color, 3);
     color: white;
   }
 }

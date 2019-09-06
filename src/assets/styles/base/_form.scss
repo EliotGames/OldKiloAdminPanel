@@ -1,35 +1,18 @@
-.form-control::-moz-placeholder {
-  @include placeholder($medium-gray, 1);
-}
-
-.form-control:-moz-placeholder {
-  @include placeholder($medium-gray, 1);
-}
-
-.form-control::-webkit-input-placeholder {
-  @include placeholder($medium-gray, 1);
-}
-
-.form-control:-ms-input-placeholder {
-  @include placeholder($medium-gray, 1);
-}
-
 .form-control {
   box-sizing: border-box;
   height: 33.2px;
-  border: 0.6px solid rgba(37, 38, 95, 0.2);
   border-radius: 2px;
-  background-color: #F5F9FC; //  background-color: $white-bg;
-  //  border: 1px solid $light-gray;
-  //  border-radius: $border-radius-base;
-  color: #565656;
+  background-color: lighten($primary-color, 5);
+  color: $primary-font-color;
   @include box-shadow(none);
   &:focus {
-    background-color: $white-bg;
-    border: 1px solid $medium-dark-gray;
+    background-color: $primary-lighter;
     @include box-shadow(none);
     outline: 0 !important;
-    color: #333333;
+  }
+  &::placeholder {
+    opacity: 0.5;
+    color: $primary-font-color;
   }
   .has-success &,
   .has-error &,

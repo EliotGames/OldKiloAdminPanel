@@ -38,15 +38,15 @@ html, body {
     margin-bottom: 25px;
   }
   .rbc-toolbar button {
-    @include btn-styles($primary-bg, $primary-states-color);
+    @include btn-styles($primary-color, $primary-states-color);
     &.rbc-active,
     &.rbc-active:hover,
     &:active,
     &:focus,
     &:hover,
     &:active:hover {
-      background-color: lighten($primary-bg, 25%);
-      border-color: $primary-bg;
+      background-color: lighten($primary-color, 25%);
+      border-color: $primary-color;
     }
   }
   .rbc-month-row {
@@ -55,10 +55,10 @@ html, body {
   .rbc-row-segment {
     padding: 2px;
     .rbc-event {
-      background: $primary-bg;
+      background: $primary-color;
     }
     .rbc-event.rbc-selected {
-      background: darken($primary-bg, 5);
+      background: darken($primary-color, 5);
     }
     .rbc-event-content {
       font-size: 12px;

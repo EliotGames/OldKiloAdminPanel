@@ -38,7 +38,7 @@ const Main = ({
     })}>
       <div className="wrapper">
         <div className="close-layer" onClick={hideMobileMenu}></div>
-        <SideBar />
+        <SideBar/>
 
         <div className="main-panel">
           <Header />
