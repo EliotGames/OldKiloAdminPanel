@@ -1,29 +1,14 @@
-# Crystal React Bootstrap Dashboard
+# React Bootstrap Dashboard for KiLo Project
 
 ![Crystal Dashboard](https://user-images.githubusercontent.com/1154740/31934597-c2b055dc-b8d6-11e7-869d-48e6f8992718.png)
 
-Crystal React Bootstrap Dashboard is a beautiful, multi-purpose admin dashboard which is with React, Redux & Bootstrap. It contains a lot of simple and easy to use React components. You can use this dashboard to build many kind of dashboard include health, employees, company dashboard.
+Was made using Crystal React Bootstrap Dashboard (https://github.com/jslancerteam/crystal-dashboard)
 
-This package includes:
-- Charts
-- Buttons
-- Notifications
-- Sweet Alert
-- Redux Form
-- AirBnB React Dates
-- Google Map
-- Uber Vector Map
-- React Bootstrap Table
-- React Big Calendar
-
-In order to keep our stylesheet easy to maintain and customize by everyone. Stylesheet is writen by SCSS.
-
-**[Live preview](https://jslancerteam.github.io/crystal-dashboard/#/)**
 
 ## Get started
 *Development*
 ```
-git clone https://github.com/jslancerteam/crystal-dashboard
+git clone https://github.com/EliotGames/KiloAdminPanel.git
 npm install
 npm start
 ```
@@ -154,7 +139,7 @@ npm run build
 └── registerServiceWorker.js
 ```
 ## Author
-David Tran [@davidtranwd](https://twitter.com/davidtranwd)
+Team Eliot [@TeamEliot](https://github.com/EliotGames)
 
 ## License
 Licensed under MIT
