@@ -16,7 +16,7 @@ class SideBar extends Component {
     return (
       <div className="sidebar" data-color={backgroundColor} data-image={backgroundImage}>
         <div className="brand">
-          <a href="#" className="brand-name">
+          <a href="/" className="brand-name">
             <img src={logoImage} alt="logo" className="logo" />
           </a>
         </div>
