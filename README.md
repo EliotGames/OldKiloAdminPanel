@@ -13,9 +13,14 @@ npm install
 npm start
 ```
 
-*Build*
+*Build - Generates the build folder*
 ```
 npm run build
+```
+
+*Deploy - Test deployment version of project*
+```
+npm run deploy
 ```
 
 ## File structure

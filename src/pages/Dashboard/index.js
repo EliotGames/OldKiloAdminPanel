@@ -8,6 +8,9 @@ const Dashboard = () => (
   <div className="content">
     <div className="container-fluid">
       <div className="row">
+        
+      </div>
+      <div className="row">
         <div className="col-md-4">
           <EmailChart />
         </div>
