@@ -16,7 +16,6 @@ import MobileMenu from '../../components/MobileMenu';
 import Dashboard from '../Dashboard';
 import Components from '../Components';
 import UserProfile from '../UserProfile';
-import MapsPage from '../MapsPage';
 import Forms from '../Forms';
 import Charts from '../Charts';
 import Calendar from '../Calendar';
@@ -47,7 +46,6 @@ const Main = ({
           <Route path="/profile" component={UserProfile} />
           <Route path="/forms" component={Forms} />
           <Route path="/tables" component={Tables} />
-          <Route path="/maps" component={MapsPage} />
           <Route path="/charts" component={Charts} />
           <Route path="/calendar" component={Calendar} />
           <Footer />

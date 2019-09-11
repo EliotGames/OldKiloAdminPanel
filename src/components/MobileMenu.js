@@ -50,12 +50,6 @@ const MobileMenu = ({
             <p>Icons</p>
           </Link>
         </li>
-        <li className={location.pathname === '/map' ? 'active' : null}>
-          <Link to="/map">
-            <i className="pe-7s-map-marker"></i>
-            <p>Maps</p>
-          </Link>
-        </li>
         <li className={location.pathname === '/notifications' ? 'active' : null}>
           <Link to="notifications">
             <i className="pe-7s-bell"></i>
