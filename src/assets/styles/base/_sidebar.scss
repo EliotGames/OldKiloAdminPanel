@@ -202,7 +202,7 @@ a {
   width: calc(100% - 280px);
   min-height: 100%;
   overflow: auto;
-  background-color: #fafcfe;
+  background-color: $primary-lighter;
   box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1);
 }
 

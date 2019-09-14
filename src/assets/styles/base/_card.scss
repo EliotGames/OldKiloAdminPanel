@@ -1,8 +1,8 @@
 .card {
-  border: 1px solid $light-gray;
   border-radius: 4px;
   margin-bottom: 30px;
-  background: white;
+  background: $primary-color;
+  color: $primary-font-color;
   .title {
     margin: 0;
     color: $primary-color;
@@ -20,7 +20,7 @@
     h5,
     h6 {
       margin: 15px 0;
-      color: darken($primary-color, 10);
+      color: $primary-font-color;
       letter-spacing: 1px;
       line-height: 17px;
       font-weight: 300;
