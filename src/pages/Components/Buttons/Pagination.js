@@ -20,33 +20,33 @@ const Pagination = () => (
       </ul>
       &nbsp;
       <ul className="pagination pagination-primary">
-        <li><a href="#">«</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li className="active"><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">»</a></li>
+        <li><a href={null}>«</a></li>
+        <li><a href={null}>1</a></li>
+        <li><a href={null}>2</a></li>
+        <li className="active"><a href={null}>3</a></li>
+        <li><a href={null}>4</a></li>
+        <li><a href={null}>5</a></li>
+        <li><a href={null}>»</a></li>
       </ul>
       &nbsp;
       <ul className="pagination pagination-success">
-        <li><a href="#">«</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li className="active"><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">»</a></li>
+        <li><a href={null}>«</a></li>
+        <li><a href={null}>1</a></li>
+        <li><a href={null}>2</a></li>
+        <li className="active"><a href={null}>3</a></li>
+        <li><a href={null}>4</a></li>
+        <li><a href={null}>5</a></li>
+        <li><a href={null}>»</a></li>
       </ul>
       &nbsp;
       <ul className="pagination pagination-no-border">
-        <li><a href="#">«</a></li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li className="active"><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">»</a></li>
+        <li><a href={null}>«</a></li>
+        <li><a href={null}>1</a></li>
+        <li><a href={null}>2</a></li>
+        <li className="active"><a href={null}>3</a></li>
+        <li><a href={null}>4</a></li>
+        <li><a href={null}>5</a></li>
+        <li><a href={null}>»</a></li>
       </ul>
 
     </div>

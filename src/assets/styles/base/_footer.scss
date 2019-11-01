@@ -10,12 +10,19 @@
     display: inline;
     margin-right: 30px;
     a {
+      color: $primary-font-color;
       font-size: 12px;
-      font-weight: 600;
       line-height: 17px;
     }
   }
   .copyright {
-    color: #9B9B9B;	font-family: "Open Sans";	font-size: 11px;	line-height: 15px;	text-align: right;
+    color: $primary-font-color;
+    font-family: 'Open Sans';
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    a {
+      color: darken($primary-font-color, 50%);
+    }
   }
 }

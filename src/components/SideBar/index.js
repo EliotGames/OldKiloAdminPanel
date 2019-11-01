@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { Collapse } from 'react-bootstrap';
 import UserInfo from './UserInfo';
 import Nav from './Nav';
 import logoImage from 'assets/images/logo.png';
-import backgroundImage from 'assets/images/sidebar-5.jpg';
 
 class SideBar extends Component {
   state = {};
 
   render() {
-    let { location, backgroundColor, enableBackgroundImage, backgroundImage } = this.props;
+    let { backgroundColor, enableBackgroundImage, backgroundImage } = this.props;
 
     return (
       <div className="sidebar" data-color={backgroundColor} data-image={backgroundImage}>

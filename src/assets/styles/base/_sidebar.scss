@@ -134,13 +134,29 @@ a {
 
   > .sidebar-wrapper > .nav {
     > li {
+      &:nth-child(4n-3) {
+        background-image: linear-gradient(40deg, #6a83fe 0%, #24d1fd 100%);
+      }
+      &:nth-child(4n-2) {
+        background-image: linear-gradient(40deg, #ff998b 0%, #ff6b88 100%);
+      }
+      &:nth-child(4n-1) {
+        background-image: linear-gradient(40deg, #08afe9 0%, #29f499 100%);
+      }
+      &:nth-child(4n) {
+        background-image: linear-gradient(40deg, #6e7cff 0%, #fd83ec 100%);
+      }
       > a {
         padding: 20px 30px;
         font-size: 14px;
         color: $sidebar-color;
+        background: $primary-color;
         &:hover {
-          background: $primary-lighter;
+          background: transparent;
         }
+      }
+      &.active > a {
+        background: transparent;
       }
 
       &.active .caret {

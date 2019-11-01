@@ -5,11 +5,11 @@
   color: $primary-font-color;
   .title {
     margin: 0;
-    color: $primary-color;
+    color: $primary-font-color;
     font-weight: 300;
     margin-bottom: 10px;
   }
-  .header {
+  .header { 
     padding: 15px 30px 0px;
     font-weight: 600;
     font-size: 22px;
@@ -26,7 +26,7 @@
       font-weight: 300;
     }
     p {
-      color: $black-color;
+      color: $primary-font-color;
       font-size: 12px;
       line-height: 17px;
       font-weight: 300;

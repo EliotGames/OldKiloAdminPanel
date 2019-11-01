@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactChartist from 'react-chartist';
-import Chartist from 'chartist';
 
 const dataPreferences = {
   labels: ['62%','32%','6%'],

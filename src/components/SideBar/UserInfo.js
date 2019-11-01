@@ -30,9 +30,9 @@ class UserInfo extends Component {
         </div>
         <Collapse in={isShowingUserMenu}>
           <ul className="nav user-nav">
-            <li><a href="#">My Profile</a></li>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Settings</a></li>
+            <li><a href={null}>My Profile</a></li>
+            <li><a href={null}>Edit Profile</a></li>
+            <li><a href={null}>Settings</a></li>
           </ul>
         </Collapse>
       </div>

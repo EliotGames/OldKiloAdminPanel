@@ -7,7 +7,7 @@ const UserInfo = () => (
     </div>
     <div className="content">
       <div className="author">
-        <a href="#">
+        <a href={null}>
           <img className="avatar border-gray" src={profileImage} alt="Mike Andrew" />
 
           <h4 className="title">

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => (
   <footer className="footer">
@@ -6,29 +6,22 @@ const Footer = () => (
       <nav className="pull-left">
         <ul>
           <li>
-            <a href="#">
-              Home
-                  </a>
+            <a href={null}>Home</a>
           </li>
           <li>
-            <a href="#">
-              Company
-                  </a>
+            <a href={null}>Company</a>
           </li>
           <li>
-            <a href="#">
-              Portfolio
-                  </a>
+            <a href={null}>Portfolio</a>
           </li>
           <li>
-            <a href="#">
-              Blog
-                  </a>
+            <a href={null}>Blog</a>
           </li>
         </ul>
       </nav>
       <p className="copyright pull-right">
-        © 2017 <a href="http://jslancer.com">JSLancer</a>, made with love for a better web
+        © 2017 <a href="http://jslancer.com">JSLancer</a>, made with love for a
+        better web
       </p>
     </div>
   </footer>

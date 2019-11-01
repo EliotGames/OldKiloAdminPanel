@@ -97,22 +97,22 @@ class ThemeOptions extends Component {
             <li className="header-title">Sidebar Images</li>
             <li className={cx({active: backgroundImage === sideBar1})}>
               <a className="img-holder switch-trigger" onClick={() => setBackgroundImage(sideBar1)}>
-                <img src={sideBar1} />
+                <img alt="sidebar 1" src={sideBar1} />
               </a>
             </li>
             <li className={cx({active: backgroundImage === sideBar3})}>
               <a className="img-holder switch-trigger" onClick={() => setBackgroundImage(sideBar3)}>
-                <img src={sideBar3} />
+                <img alt="sidebar 3" src={sideBar3} />
               </a>
             </li>
             <li className={cx({active: backgroundImage === sideBar4})}>
               <a className="img-holder switch-trigger" onClick={() => setBackgroundImage(sideBar4)}>
-                <img src={sideBar4} />
+                <img alt="sidebar 4" src={sideBar4} />
               </a>
             </li>
             <li className={cx({active: backgroundImage === sideBar5})}>
               <a className="img-holder switch-trigger" onClick={() => setBackgroundImage(sideBar5)}>
-                <img src={sideBar5} />
+                <img alt="sidebar 5" src={sideBar5} />
               </a>
             </li>
           </ul>

@@ -18,13 +18,7 @@ const validate = values => {
   return errors;
 }
 
-const submitForm = values => {
-  alert('You entered: ' + JSON.stringify(values, 0, 2));
-  return false;
-}
-
 const HorizontalForm = ({
-  submitting,
   handleSubmit
 }) => (
   <div className="card">
