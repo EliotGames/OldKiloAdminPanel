@@ -1,5 +1,11 @@
 .mydevices {
-  .title {
+  .card .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .card .content {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;

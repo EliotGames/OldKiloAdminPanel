@@ -1,31 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Device from "./Device";
 
-class MyDevices extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+function MyDevices(props) {
+  const [devices, setDevices] = useState([]);
 
-  render() {
-    return (
-      <div className="content mydevices">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col">
-              <div className="card">
-                <div className="header">
-                  <div className="title">
-                    <h4>My device</h4>
-                    <p>Last update 20 min ago</p>
-                  </div>
-                </div>
-                <div className="content"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+  useEffect(() => {
+    fetch("http://eliot-project.herokuapp.com/api/device")
+      .then(res => res.json())
+      .then(data => {
+        setDevices(data);
+      });
+  });
+
+  return (
+    <div className="content mydevices">
+      <div className="container-fluid">
+        {devices.map(device => (
+          <Device device={device} />
+        ))}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default MyDevices;

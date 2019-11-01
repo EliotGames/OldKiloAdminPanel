@@ -3,16 +3,19 @@
   margin-bottom: 30px;
   background: $primary-color;
   color: $primary-font-color;
+
   .title {
     margin: 0;
     color: $primary-font-color;
     font-weight: 300;
     margin-bottom: 10px;
   }
-  .header { 
+
+  .header {
     padding: 15px 30px 0px;
     font-weight: 600;
     font-size: 22px;
+
     h1,
     h2,
     h3,
@@ -25,6 +28,7 @@
       line-height: 17px;
       font-weight: 300;
     }
+
     p {
       color: $primary-font-color;
       font-size: 12px;
@@ -32,42 +36,51 @@
       font-weight: 300;
     }
   }
+
   .content {
     padding: 10px 30px 20px 30px;
   }
+
   .footer {
     padding: 0 30px 5px;
     background-color: transparent;
     line-height: 30px;
+
     .legend {
       padding: 5px 0;
       display: flex;
       align-items: center;
+
       .item {
         margin-right: 10px;
       }
     }
+
     .stats {
       color: $medium-dark-gray;
     }
+
     hr {
       margin-top: 5px;
       margin-bottom: 5px;
       border-color: $medium-gray;
     }
   }
+
   .form-group label,
   fieldset label {
     font-size: 12px;
     line-height: 18px;
     font-weight: 300;
+
     &.control-label {
-      color: #25265F;
+      color: #25265f;
       text-transform: uppercase;
     }
+
     &.error {
       text-transform: none;
-      color: #FB404B;
+      color: #fb404b;
       margin-top: 5px;
     }
   }
