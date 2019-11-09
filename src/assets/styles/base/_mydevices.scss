@@ -1,13 +1,81 @@
 .mydevices {
-  .card .title {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  & .list {
+    & .card {
+      min-height: 120px;
+      cursor: pointer;
+    }
+
+    & .card .title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    & .card .content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    & .loader {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+    }
   }
 
-  .card .content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+  & .edit-form {
+    & .form-control {
+      padding: 0 4px;
+      flex: 1;
+    }
+
+    & h5 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    & .help-block {
+      margin: 0;
+    }
+
+    & .field-with-button {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .text-input {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    & .btn {
+      height: 36px;
+      background: transparent;
+
+      &.submit {
+        display: block;
+        font-weight: 500;
+        font-size: 1.8em;
+        height: 1.8em;
+        border-radius: 7px;
+        line-height: 1em;
+        margin: 20px auto 0;
+      }
+
+      &:hover,
+      &:active {
+        background: $gradient-blue;
+      }
+
+      &:focus {
+        background: transparent;
+      }
+    }
+
+    & .weight {
+      color: #ccc;
+      font-style: italic;
+    }
   }
 }

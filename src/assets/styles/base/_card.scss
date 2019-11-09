@@ -24,7 +24,6 @@
     h6 {
       margin: 15px 0;
       color: $primary-font-color;
-      letter-spacing: 1px;
       line-height: 17px;
       font-weight: 300;
     }
@@ -74,7 +73,7 @@
     font-weight: 300;
 
     &.control-label {
-      color: #25265f;
+      color: $primary-font-color;
       text-transform: uppercase;
     }
 

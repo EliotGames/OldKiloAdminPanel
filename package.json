@@ -51,10 +51,12 @@
     "react-dev-utils": "^4.0.1",
     "react-dom": "^16.11.0",
     "react-google-maps": "^7.3.0",
+    "react-loader-spinner": "^3.1.4",
     "react-map-gl": "^3.0.4",
     "react-notification-system": "^0.2.15",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-select": "^3.0.8",
     "redux": "^3.7.2",
     "redux-form": "^7.0.4",
     "redux-logger": "^3.0.6",
@@ -78,7 +80,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build && node server.js"
+    "deploy": "node server.js"
   },
   "jest": {
     "collectCoverageFrom": [

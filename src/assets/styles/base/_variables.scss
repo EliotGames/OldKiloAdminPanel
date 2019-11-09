@@ -54,7 +54,6 @@ $danger-states-color:        #EE2D20 !default;
 
 $link-disabled-color:        #666666 !default;
 
-
 /*      light colors         */
 $light-blue:                 rgba($primary-color, .2);
 $light-azure:                rgba($info-color, .2);
@@ -62,6 +61,11 @@ $light-green:                rgba($success-color, .2);
 $light-orange:               rgba($warning-color, .2);
 $light-red:                  rgba($danger-color, .2);
 
+/*   Gradients     */
+$gradient-blue:               linear-gradient(40deg, #6a83fe 0%, #24d1fd 100%);
+$gradient-red:                linear-gradient(40deg, #ff998b 0%, #ff6b88 100%);
+$gradient-green:              linear-gradient(40deg, #08afe9 0%, #29f499 100%);
+$gradient-violet:             linear-gradient(40deg, #6e7cff 0%, #fd83ec 100%);
 
 //== Components
 //

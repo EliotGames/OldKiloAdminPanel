@@ -1,26 +1,47 @@
 import React, { useState, useEffect } from "react";
-import Device from "./Device";
 
-function MyDevices(props) {
-  const [devices, setDevices] = useState([]);
+import { API } from "../../helpers";
+import DevicesList from "./DevicesList";
+import EditDevice from "./EditDevice";
 
-  useEffect(() => {
-    fetch("http://eliot-project.herokuapp.com/api/device")
-      .then(res => res.json())
-      .then(data => {
-        setDevices(data);
+export default function MyDevices() {
+  const [selectedDevice, setSelectedDevice] = useState(null);
+
+  function handleDeviceSelect(device) {
+    setSelectedDevice(device);
+  }
+
+  function handleSaveChangesClick(device) {
+    API.patch(`device/${device._id}`, device)
+      .then(res => {
+        
+        setSelectedDevice(null);
+      })
+      .catch(e => {
+        console.error(e);
       });
-  });
+  }
 
   return (
-    <div className="content mydevices">
+    <div className="mydevices content">
       <div className="container-fluid">
-        {devices.map(device => (
-          <Device device={device} />
-        ))}
+        <div className="row">
+          {selectedDevice ? (
+            <React.Fragment>
+              <div className="col-lg-7">
+                <DevicesList onDeviceSelect={handleDeviceSelect} />
+              </div>
+              <div className="col-lg-5">
+                <EditDevice device={selectedDevice} onSaveChangesClick={handleSaveChangesClick} />
+              </div>
+            </React.Fragment>
+          ) : (
+            <div className="col-lg-12">
+              <DevicesList onDeviceSelect={handleDeviceSelect} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
 }
-
-export default MyDevices;

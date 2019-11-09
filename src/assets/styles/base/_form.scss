@@ -4,10 +4,10 @@
   border-radius: 2px;
   background-color: lighten($primary-color, 5);
   color: $primary-font-color;
-  @include box-shadow(none);
+  padding: 6px 2px;
+  
   &:focus {
     background-color: $primary-lighter;
-    @include box-shadow(none);
     outline: 0 !important;
   }
   &::placeholder {
