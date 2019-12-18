@@ -1,0 +1,93 @@
+.mydevices {
+  overflow-x: hidden;
+
+  & .list {
+    > .loader {
+      padding-top: 80px;
+      min-height: 240px;
+    }
+
+    .card {
+      min-height: 120px;
+      cursor: pointer;
+      box-sizing: rgba(0, 0, 0, 0.5) 2px 3px 8px 0px;
+    }
+
+    & .card .title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    & .card .content {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    & .loader {
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+    }
+  }
+
+  & .edit-form {
+    & .form-control {
+      padding: 0 8px;
+      font-size: 16px;
+      flex: 1;
+      border: none;
+      box-shadow: none;
+      background: lighten($primary-highlight-color, .9);
+    }
+
+    & h5 {
+      margin-top: 20px;
+      margin-bottom: 12px;
+    }
+
+    & .help-block {
+      margin: 0;
+    }
+
+    & .field-with-button {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    & .text-input {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    & .btn {
+      height: 36px;
+      background: transparent;
+
+      &.submit {
+        display: block;
+        font-weight: 500;
+        font-size: 1.8em;
+        height: 1.8em;
+        border-radius: 7px;
+        line-height: 1em;
+        margin: 20px auto 0;
+      }
+
+      &:hover,
+      &:active {
+        background: $gradient-blue;
+      }
+
+      &:focus {
+        background: transparent;
+      }
+    }
+
+    & .weight {
+      color: #ccc;
+      font-style: italic;
+    }
+  }
+}

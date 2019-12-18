@@ -13,7 +13,7 @@ class TableWithLinks extends Component {
   }
 
   render() {
-    let { items, isShowingAlert } = this.state;
+    let { items } = this.state;
     return (
       <div className="card">
         <div className="header">

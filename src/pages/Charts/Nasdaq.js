@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactChartist from 'react-chartist';
-import Chartist from 'chartist';
 
 const dataStock = {
   labels: ['\'07','\'08','\'09', '\'10', '\'11', '\'12', '\'13', '\'14', '\'15'],

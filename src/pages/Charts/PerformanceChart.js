@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactChartist from 'react-chartist';
-import Chartist from 'chartist';
 
 const dataPerformance = {
   labels: ['6pm','9pm','11pm', '2am', '4am', '8am', '2pm', '5pm', '8pm', '11pm', '4am'],

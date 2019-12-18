@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: white;
   overflow: hidden;
 }
@@ -16,7 +16,7 @@ body,
 }
 
 .main-panel > .content {
-  padding: 10px;
+  padding: 10px 24px;
 }
 
 .main-panel,
@@ -49,40 +49,36 @@ a {
   bottom: 0;
   left: 0;
   width: $sidebar-width;
-  display: block;
   z-index: 1;
-  color: $sidebar-color;
-  font-weight: 200;
   transition-duration: 0.2s, 0.2s, 0.35s;
-  background-color: $primary-color;
+  background-color: $primary-light-color;
 
   .sidebar-wrapper {
-    background-color: $sidebar-bg;
     height: calc(100vh - 64px);
     overflow: auto;
   }
+
   .brand {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     height: 75px;
     width: 100%;
+    padding-left: 32px;
     background-color: $primary-color;
     .logo {
       width: 92px;
       margin-right: 10px;
     }
     .brand-name {
-      color: #ea4c89;
-      font-family: 'SF UI Text';
-      font-size: 16px;
+      color: white;
+      font-size: 28px;
+      text-transform: capitalize;
       font-weight: 600;
-      line-height: 19px;
-      text-align: center;
       margin-top: 10px;
     }
   }
+
   .user-wrapper {
     .user {
       margin: 0 auto;
@@ -111,44 +107,37 @@ a {
           line-height: 17px;
         }
       }
-      .collapse-arrow {
-        font-size: 30px;
-        transition: all 0.3s ease;
-      }
-      .collapse-arrow.active {
-        transform: rotate(180deg);
-      }
-    }
-    .user-nav > li > a {
-      padding-left: 90px;
-      color: $primary-font-color;
-      &:hover,
-      &:active {
-        background: $primary-lighter;
-      }
-      &:focus {
-        background: transparent;
-      }
     }
   }
 
-  > .sidebar-wrapper > .nav {
+  .nav {
     > li {
       > a {
         padding: 20px 30px;
         font-size: 14px;
-        color: $sidebar-color;
+        color: $primary-font-color;
+
         &:hover {
-          background: $primary-lighter;
+          background: $primary-highlight-color;
+        }
+      }
+      &.active {
+        font-weight: 600;
+
+        i {
+          font-weight: 600;
+        }
+
+        a {
+          background: $primary-highlight-color;
+        }
+
+        .caret {
+          transform: rotate(180deg);
         }
       }
 
-      &.active .caret {
-        transform: rotate(180deg);
-      }
-
-      > div > ul.nav {
-        background: $primary-color;
+      &.active > div > ul.nav {
         list-style-type: circle;
 
         > li {
@@ -157,7 +146,7 @@ a {
             font-size: 13px;
             color: white;
             &:hover {
-              background: $primary-lighter;
+              background: $primary-highlight-color;
             }
           }
         }
@@ -187,6 +176,7 @@ a {
       }
     }
   }
+
   .line {
     box-sizing: border-box;
     height: 1px;
@@ -202,7 +192,7 @@ a {
   width: calc(100% - 280px);
   min-height: 100%;
   overflow: auto;
-  background-color: $primary-lighter;
+  background-color: $primary-background-color;
   box-shadow: 0 30px 130px 0 rgba(90, 105, 116, 0.1);
 }
 
@@ -253,7 +243,7 @@ a {
   opacity: 0;
   top: 0;
   left: auto;
-  content: '';
+  content: "";
   z-index: 1000;
   overflow-x: hidden;
   visibility: hidden;

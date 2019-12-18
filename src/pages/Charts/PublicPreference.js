@@ -1,10 +1,9 @@
-import React from 'react';
-import ReactChartist from 'react-chartist';
-import Chartist from 'chartist';
+import React from "react";
+import ReactChartist from "react-chartist";
 
 const dataPreferences = {
-  labels: ['62%','32%','6%'],
-  series: [62, 32, 6]
+  labels: ["62%"],
+  series: [62]
 };
 
 const optionsPreferences = {
@@ -29,8 +28,13 @@ const PublicPreference = () => (
       <h4>Public Preferences</h4>
       <p className="category">Pie Chart</p>
     </div>
-    <div className="content">
-      <ReactChartist data={dataPreferences} options={optionsPreferences} type="Pie" className="ct-chart" />
+    <div className="content device-status-graph">
+      <ReactChartist
+        data={dataPreferences}
+        options={optionsPreferences}
+        type="Pie"
+        className="ct-chart"
+      />
     </div>
     <div className="footer">
       <h6>Legend</h6>

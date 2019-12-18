@@ -9,8 +9,6 @@ class Checkbox extends Component {
     let {
       input,
       label,
-      type,
-      meta: { touched, error, warning },
       disabled
     } = this.props;
 
@@ -20,8 +18,8 @@ class Checkbox extends Component {
         disabled: disabled
       })}>
         <span className="icons">
-          <img className="first-icon" src={uncheckImage} width={17} />
-          <img className="second-icon" src={checkImage} width={17} />
+          <img alt="first-icon" className="first-icon" src={uncheckImage} width={17} />
+          <img alt="second-icon" className="second-icon" src={checkImage} width={17} />
         </span>
         <input {...input} type="checkbox" data-toggle="checkbox" disabled={disabled} />
         {label}

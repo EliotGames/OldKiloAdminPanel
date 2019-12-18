@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Colors from './Colors';
 import ButtonStyles from './ButtonStyles';
 import ButtonsWithLabel from './ButtonsWithLabel';
