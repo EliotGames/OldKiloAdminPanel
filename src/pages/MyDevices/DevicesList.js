@@ -1,26 +1,27 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-import { API } from "../../helpers";
+import CircleLoader from "../../components/CircleLoader";
 import Device from "./Device";
 
-export default function DevicesList({ onDeviceSelect }) {
-  const [devices, setDevices] = useState([]);
-
-  useEffect(() => {
-    getDevices().then(data => {
-      setDevices(data);
-    });
-  }, []);
-
-  async function getDevices() {
-    return await API.get("device");
-  }
-
+export default function DevicesList({ devices, isLoading, selectedDevice, onDeviceSelect }) {
   return (
     <div className="list">
-      {devices.map(device => (
-        <Device key={device._id} device={device} onClick={() => onDeviceSelect(device)} />
-      ))}
+      {isLoading ? (
+        <div className="loader">
+          <CircleLoader />
+        </div>
+      ) : (
+        devices.map(device => (
+          <Device
+            key={device._id}
+            isSelected={selectedDevice && selectedDevice._id === device._id}
+            device={device}
+            onClick={() => {
+              onDeviceSelect(device);
+            }}
+          />
+        ))
+      )}
     </div>
   );
 }

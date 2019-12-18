@@ -1,8 +1,16 @@
 .mydevices {
+  overflow-x: hidden;
+
   & .list {
-    & .card {
+    > .loader {
+      padding-top: 80px;
+      min-height: 240px;
+    }
+
+    .card {
       min-height: 120px;
       cursor: pointer;
+      box-sizing: rgba(0, 0, 0, 0.5) 2px 3px 8px 0px;
     }
 
     & .card .title {
@@ -26,8 +34,12 @@
 
   & .edit-form {
     & .form-control {
-      padding: 0 4px;
+      padding: 0 8px;
+      font-size: 16px;
       flex: 1;
+      border: none;
+      box-shadow: none;
+      background: lighten($primary-highlight-color, .9);
     }
 
     & h5 {

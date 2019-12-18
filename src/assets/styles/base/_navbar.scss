@@ -52,7 +52,7 @@
   .navbar-nav {
     .open > a, .open > a:focus {
       color: $primary-font-color;
-      background-color: $primary-lighter;
+      background-color: $primary-light-color;
     }
     > li > a {
       padding: 28px 25px;
@@ -63,7 +63,7 @@
       line-height: 17px;
       &:hover {
         color: $primary-font-color;
-        background-color: $primary-lighter;
+        background-color: $primary-light-color;
       }
       &:focus {
         color: $primary-font-color;

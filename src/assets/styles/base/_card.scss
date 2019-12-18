@@ -1,13 +1,18 @@
 .card {
-  border-radius: 4px;
+  border-radius: 15px;
   margin-bottom: 30px;
-  background: $primary-color;
+  background: $primary-light-color;
   color: $primary-font-color;
+  // box-shadow: 3px 5px 5px lighten($primary-light-color, 0.9);
+
+  &.selected {
+    background-color: $primary-highlight-color;
+    // box-shadow: 3px 5px 5px darken($primary-highlight-color, 0.9);
+  }
 
   .title {
     margin: 0;
     color: $primary-font-color;
-    font-weight: 300;
     margin-bottom: 10px;
   }
 
@@ -15,6 +20,10 @@
     padding: 15px 30px 0px;
     font-weight: 600;
     font-size: 22px;
+
+    .title {
+      font-weight: 500;
+    }
 
     h1,
     h2,
@@ -25,7 +34,6 @@
       margin: 15px 0;
       color: $primary-font-color;
       line-height: 17px;
-      font-weight: 300;
     }
 
     p {

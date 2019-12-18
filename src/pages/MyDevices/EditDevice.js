@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
-import Select from "react-select";
 
 import TextInput from "../../components/FormInputs/TextInput";
 
-export default function EditDevice({ device: selectedDevice, onSaveChangesClick }) {
+export default function EditDevice({
+  device: selectedDevice,
+  onSaveChangesClick
+}) {
   const [device, setDevice] = useState(selectedDevice);
 
   useEffect(() => {
     const selectedAnotherDevice = {
-      name: '',
+      name: "",
       currentWeight: 0,
-      product: '',
-      productType: '',
-      maxWeight: '',
-      zeroWeight: '',
+      product: "",
+      productType: "",
+      maxWeight: "",
+      zeroWeight: "",
       ...selectedDevice
-    }
+    };
 
     setDevice(selectedAnotherDevice);
   }, [selectedDevice]);
@@ -35,15 +37,25 @@ export default function EditDevice({ device: selectedDevice, onSaveChangesClick 
   }
 
   return (
-    <div className="edit-form">
+    <div className="edit-form animate-popup">
       <div className="card">
         <div className="header">
           <h4 className="title">KiLo name:</h4>
-          <TextInput type="text" name="name" value={device.name} onChange={handleChange} />
+          <TextInput
+            type="text"
+            name="name"
+            value={device.name}
+            onChange={handleChange}
+          />
         </div>
         <div className="content">
           <h5 className="field">Product:</h5>
-          <TextInput value={device.product} name="product" type="text" onChange={handleChange} />
+          <TextInput
+            value={device.product}
+            name="product"
+            type="text"
+            onChange={handleChange}
+          />
 
           <h5 className="field">Product type:</h5>
           <TextInput
@@ -64,7 +76,10 @@ export default function EditDevice({ device: selectedDevice, onSaveChangesClick 
               helpText="grams"
               onChange={handleChange}
             />
-            <button className="btn btn-fill" onClick={() => handleUseCurrentWeight("maxWeight")}>
+            <button
+              className="btn btn-fill"
+              onClick={() => handleUseCurrentWeight("maxWeight")}
+            >
               Use current weight
             </button>
           </div>
@@ -80,15 +95,30 @@ export default function EditDevice({ device: selectedDevice, onSaveChangesClick 
               helpText="grams"
               onChange={handleChange}
             />
-            <button className="btn btn-fill" onClick={() => handleUseCurrentWeight("zeroWeight")}>
+            <button
+              className="btn btn-fill"
+              onClick={() => handleUseCurrentWeight("zeroWeight")}
+            >
               Use current weight
             </button>
           </div>
 
+          <h5 className="field">Alert :</h5>
+          <TextInput
+            value={device.alertOn}
+            name="alertOn"
+            type="text"
+            placeholder="default 20%"
+            onChange={handleChange}
+          />
+
           <h5 className="field">Current weight:</h5>
           <p className="weight">{device.currentWeight} grams</p>
 
-          <button className="submit btn btn-fill" onClick={() => onSaveChangesClick(device)}>
+          <button
+            className="submit btn btn-fill"
+            onClick={() => onSaveChangesClick(device)}
+          >
             Save changes
           </button>
         </div>

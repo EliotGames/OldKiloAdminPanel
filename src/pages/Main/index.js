@@ -40,13 +40,14 @@ const Main = ({
         <div className="main-panel">
           <Header />
           <Route exact path="/" component={MyDevices} />
+          <Route exact path="/orders" component={MyDevices} />
+          <Route exact path="/statistics" component={MyDevices} />
           <Route path="/components" component={Components} />
           <Route path="/profile" component={UserProfile} />
           <Route path="/forms" component={Forms} />
           <Route path="/tables" component={Tables} />
           <Route path="/charts" component={Charts} />
           <Route path="/calendar" component={Calendar} />
-          <Footer />
         </div>
       </div>
     </div>
